@@ -47,16 +47,7 @@ async def gcast(event):
     elif event.is_reply:
         msg = await event.get_reply_message()
     else:
-        return await edit_delete(event, ".gcast Lagi Cari Nokos (Nomer kosong) Indonesia Telegram?"
-                                        "- Untuk Culik Member Jika kalian punya group"
-                                        "- Untuk promosi atau kebutuhan bisnis"
-                                        "- Untuk privasi"
-                                        "- Untuk akun cadangan karena akun lain limit"
-                                        "Daftar Harga Nokos Telegram"                 
-                                        "⋆ 1 nokos 1,5k"
-                                        "⋆ 10 nokos 15.000 (1,5k)"
-                                        "⋆ 50 nokos 65.000 (1,3k)
-                                        "⋆ 100 nokos 130.000 (1,3k)")
+        return await edit_delete(event, "**Berikan Sebuah Pesan atau Reply**")
     kk = await edit_or_reply(event, "`Globally Broadcasting Msg...`")
     er = 0
     done = 0
@@ -75,6 +66,7 @@ async def gcast(event):
     await kk.edit(
         f"**Berhasil Mengirim Pesan Ke** `{done}` **Grup, Gagal Mengirim Pesan Ke** `{er}` **Grup**"
     )
+
 
 
 @man_cmd(pattern="gucast(?: |$)(.*)")
