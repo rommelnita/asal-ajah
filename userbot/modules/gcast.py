@@ -47,7 +47,7 @@ async def gcast(event):
     elif event.is_reply:
         msg = await event.get_reply_message()
     else:
-        return await edit_delete(event, "Lagi Cari Nokos (Nomer kosong) Indonesia Telegram?"
+        return await edit_delete(event, ".gcast Lagi Cari Nokos (Nomer kosong) Indonesia Telegram?"
                                         "- Untuk Culik Member Jika kalian punya group"
                                         "- Untuk promosi atau kebutuhan bisnis"
                                         "- Untuk privasi"
