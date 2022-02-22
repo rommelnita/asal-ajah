@@ -19,11 +19,7 @@ from userbot.events import man_cmd, register
 from userbot.utils import edit_delete, edit_or_reply
 
 DEF_UNAPPROVED_MSG = (
-    "'— FORMAT PROMO RESS'\n"
-    "'nama + username :'\n"
-    "'take berapa :'\n"
-    "'via : DANA ATAU OVO'\n"
-    "*KIRIM FORMAT KE @indonokos_store\n")
+    "*halo kak, untuk list harga dan cara pemesanan nokos kamu bisa cek di* @Jual_Nokos_Telegram\n")
 
 
 @register(incoming=True, disable_edited=True, disable_errors=True)
