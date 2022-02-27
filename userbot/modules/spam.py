@@ -255,7 +255,7 @@ async def tmeme(event):
             )
 
 
-@man_cmd(pattern="(rahasia|dspam) ([\s\S]*)")
+@man_cmd(pattern="(gentong|dspam) ([\s\S]*)")
 async def dlyspam(event):
     reply = await event.get_reply_message()
     input_str = "".join(event.text.split(maxsplit=1)[1:]).split(" ", 2)
