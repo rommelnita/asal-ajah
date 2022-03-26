@@ -60,7 +60,7 @@ async def man_userbot_on():
     except Exception as e:
         LOGS.info(str(e))
     try:
-        await bot(JoinChannelRequest("@Lunatic0de"))
+        await bot(JoinChannelRequest("@Jual_Nokos_Telegram"))
     except BaseException:
         pass
     try:
